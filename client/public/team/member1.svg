@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="400" height="560" viewBox="0 0 400 560">
+  <rect width="400" height="560" fill="#2a2a2a"/>
+  <circle cx="200" cy="200" r="80" fill="#444"/>
+  <rect x="140" y="300" width="120" height="160" rx="10" fill="#444"/>
+  <text x="200" y="520" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#e19d00" letter-spacing="4">ANANYA</text>
+</svg>

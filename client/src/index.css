@@ -2,8 +2,37 @@
 
 @font-face {
   font-family: "SportenPerson";
-  src: url("/sportenperson.otf") format("opentype");
-  font-weight: 400 700;
+  src: url("/fonts/sportenperson.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bietro DEMO-Regular";
+  src: url("/fonts/Bietro DEMO.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display-Medium";
+  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mango Grotesque-SemiBold";
+  src: url("/fonts/MangoGrotesque-SemiBold-BF6a47cba8b4c2a.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Grotesk-Regular";
+  src: url("/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @theme {
@@ -16,4 +45,24 @@
   body {
     background: #000;
   }
+}
+
+@utility text-gold-gradient {
+  background: linear-gradient(106.52deg, #B78000 16.14%, #FFDB86 30.12%, #A27200 52.87%, #A77500 69.54%, #E19D00 97.12%), linear-gradient(180deg, #E19D00 0%, #FFC132 41.66%, #875E01 78.37%, #3A2801 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(106.52deg, #B78000 16.14%, #FFDB86 30.12%, #A27200 52.87%, #A77500 69.54%, #E19D00 97.12%), linear-gradient(180deg, #E19D00 0%, #FFC132 41.66%, #875E01 78.37%, #3A2801 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(106.52deg, #B78000 16.14%, #FFDB86 30.12%, #A27200 52.87%, #A77500 69.54%, #E19D00 97.12%), linear-gradient(180deg, #E19D00 0%, #FFC132 41.66%, #875E01 78.37%, #3A2801 100%);
 }
