@@ -310,7 +310,176 @@
       "Enquiries : Afra: +91 79942 59363 · Udhay: +91 70124 99358."
     ],
     "registerUrl": "https://discover.snaptiqz.com/event/4WJFSYxweXpjbsiqz2Gok"
-  }
+  },
+
+    {
+    "id": 15,
+    "type": "competition",
+    "slug": "promptless",
+    "title": "Promptless",
+    "category": "COMPETITIONS",
+    "area": "Artificial Intelligence",
+    "image": "/techevents/prompt.jpeg",
+    "guidelinesTitle": "PROMPTLESS DETAILS",
+    "alt": "Promptless AI prompting competition poster",
+    "description": "One image. One chance. One perfect prompt. Test your ability to recreate an image using the fewest words possible in Promptless, where every word counts.",
+    "details": [
+      "Date : 18, 19 & 20 September 2026.",
+      "Registration : ₹29 /-.",
+      "Venue : Drishti ’26, College of Engineering Trivandrum.",
+      "Enquiries : Kashinadh: +91 73566 89767 · Nandakishore: +91 85909 76028."
+    ],
+    "registerUrl": "https://discover.snaptiqz.com/event/JJ3Iv9MK4izqH"
+  },
+
+  {
+  "id": 16,
+  "type": "competition",
+  "slug": "ea-fc-26-e-games",
+  "title": "EA FC 26 — E-Games",
+  "category": "COMPETITIONS",
+  "area": "E-Games",
+  "image": "/techevents/eafc.jpeg",
+  "guidelinesTitle": " E-GAMES DETAILS",
+  "alt": "EA FC 26 E-Games competition poster",
+  "description": "Step onto the virtual pitch and battle it out in EA FC 26 on PS5. Compete, dominate, and fight your way to the top for the ultimate gaming glory.",
+  "details": [
+    "Finals : 20 September 2026.",
+    "Format : EA FC 26 on PS5.",
+    "Registration : ₹200 /-.",
+    "Prize Pool : ₹10,000 /-.",
+    "Venue : Drishti ’26, College of Engineering Trivandrum."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/TAKGAP-i21pzVeCGKZLgS"
+},
+
+
+  {
+  "id": 17,
+  "type": "competition",
+  "slug": "valorant-tournament",
+  "title": "Valorant Tournament",
+  "category": "COMPETITIONS",
+  "area": "E-Sports",
+  "image": "/techevents/val.jpeg",
+  "guidelinesTitle": "VALORANT TOURNAMENT DETAILS",
+  "alt": "Valorant Tournament poster",
+  "description": "Gather your squad, sharpen your aim, and step into the ultimate 5v5 E-Sports showdown. Every round matters, every clutch counts, and only one team will rise above the rest.",
+  "details": [
+    "Qualifiers : 17 & 18 September 2026.",
+    "Finals : 20 September 2026.",
+    "Format : 5v5.",
+    "Registration : ₹200 /- per person.",
+    "Prize Pool : ₹30,000 /-.",
+    "Venue : Drishti ’26, College of Engineering Trivandrum."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/__qfdYAfMN9Jm48PYHdfW"
+  },
+
+  {
+  "id": 18,
+  "type": "competition",
+  "slug": "e-football-e-games",
+  "title": "E-Football — E-Games",
+  "category": "COMPETITIONS",
+  "area": "E-Sports",
+  "image": "/techevents/efoot.jpeg",
+  "guidelinesTitle": "E-FOOTBALL — E-GAMES DETAILS",
+  "alt": "E-Football E-Games competition poster",
+  "description": "Build your squad, showcase your skills, and take on the competition in the Colosseum of eFootball. Battle it out through the qualifiers and finals for a chance at the prize pool.",
+  "details": [
+    "Qualifiers : 17 & 18 September 2026.",
+    "Finals : 19 September 2026.",
+    "Registration : ₹100 /-.",
+    "Prize Pool : ₹10,000 /-.",
+    "Venue : Drishti ’26, College of Engineering Trivandrum."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/YuAaUFc33a5-6-hR0T1R2"
+},
+
+
+  {
+  "id": 19,
+  "type": "competition",
+  "slug": "promptless",
+  "title": "Promptless",
+  "category": "COMPETITIONS",
+  "area": "Artificial Intelligence",
+  "image": "/techevents/prompt.jpeg",
+  "guidelinesTitle": "PROMPTLESS DETAILS",
+  "alt": "Promptless AI prompting competition poster",
+  "description": "One image. One chance. One perfect prompt. Test your ability to recreate an image using the fewest words possible in Promptless, where every word counts. Presented by Drishti ’26 × NSS.",
+  "details": [
+    "Date : 18, 19 & 20 September 2026.",
+    "Registration : ₹29 /-.",
+    "Venue : Drishti ’26, College of Engineering Trivandrum.",
+    "Enquiries : Kashinadh: +91 73566 89767 · Nandakishore: +91 85909 76028."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/JJ3Iv9MK4izqHGC5TUtGl"
+  },
+
+  {
+  "id": 20,
+  "type": "competition",
+  "slug": "whisper-challenge",
+  "title": "Whisper Challenge",
+  "category": "COMPETITIONS",
+  "area": "Fun & Games",
+  "image": "/techevents/whisper.jpeg",
+  "guidelinesTitle": "WHISPER CHALLENGE DETAILS",
+  "alt": "Whisper Challenge competition poster",
+  "description": "Put on the headphones, turn up the chaos, and try to decode words that are almost impossible to hear. Test your lip-reading, guessing skills and ability to survive hilarious misunderstandings at the Whisper Challenge, presented by Drishti ’26 × SHE CET.",
+  "details": [
+    "Date : 20 September 2026.",
+    "Registration : ₹30 /-.",
+    "Prize Pool : ₹500 /-.",
+    "Venue : Drishti ’26, College of Engineering Trivandrum.",
+    "Enquiries : Hiba: +91 95673 18138 · Upama: +91 88489 05009."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/T3ZPgwmlSP_CN3uXJE1fJ"
+  },
+
+  {
+  "id": 21,
+  "type": "competition",
+  "slug": "photography-competition",
+  "title": "Photography Competition",
+  "category": "COMPETITIONS",
+  "area": "Photography",
+  "image": "/techevents/photo.jpeg",
+  "guidelinesTitle": "PHOTOGRAPHY COMPETITION DETAILS",
+  "alt": "Photography Competition poster",
+  "description": "Some moments don’t need a filter. They need you to catch them. Find the stories hidden across campus, bring your perspective, and turn an ordinary scene into a frame worth stopping for at the Photography Competition by Drishti ’26 × SHE CET.",
+  "details": [
+    "Date : 18, 19 & 20 September 2026.",
+    "Registration : ₹49 /- per participant.",
+    "Prize Pool : ₹1,000 /-.",
+    "Venue : Drishti ’26, College of Engineering Trivandrum.",
+    "Enquiries : Hiba: +91 95673 18138 · Upama: +91 88489 05009."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/1b519z873933SfYeNrQIp"
+  },
+
+  {
+  "id": 22,
+  "type": "competition",
+  "slug": "quiz-competition-women-in-tech",
+  "title": "Quiz Competition — Women in Tech",
+  "category": "COMPETITIONS",
+  "area": "Quiz",
+  "image": "/techevents/quiz.jpeg",
+  "guidelinesTitle": "QUIZ COMPETITION — WOMEN IN TECH DETAILS",
+  "alt": "Women in Tech Quiz Competition poster",
+  "description": "From pioneering women who shaped technology to innovators redefining its future, put your knowledge to the test in a quiz celebrating women, technology, and the minds behind groundbreaking innovations, presented by Drishti ’26 × SHE CET.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Registration : ₹30 /-.",
+    "Prize Pool : ₹500 /-.",
+    "Venue : Drishti ’26, College of Engineering Trivandrum.",
+    "Enquiries : Hiba: +91 95673 18138 · Upama: +91 88489 05009."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/pDpEHON_4DXLudqg8VFkH"
+}
     
   ]
 }
