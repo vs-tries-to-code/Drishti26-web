@@ -413,7 +413,94 @@
     "For enquiry : Adheeja - +91 95676 44670, Vishnusree - +91 62382 73188"
   ],
   "registerUrl": "https://discover.snaptiqz.com/event/bEuwQsCEiXjNYfyy39Zuj"
-  }
+  },
+
+  {
+  "id": 21,
+  "type": "workshop",
+  "slug": "industrial-automation",
+  "title": "Industrial Automation",
+  "category": "WORKSHOP",
+  "area": "Industrial Automation",
+  "image": "/techevents/auto.jpeg",
+  "guidelinesTitle": "INDUSTRIAL AUTOMATION WORKSHOP DETAILS",
+  "alt": "Industrial Automation workshop",
+  "description": "Step into the world of industrial automation and explore input components, relays, PLCs, PLC programming, PLC communication, ladder diagrams, common PLC ladder program instructions and SCADA with Drishti ’26 × Excelerators CET.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Format : Offline.",
+    "Registration Fee : ₹199 /- per participant.",
+    "Perks : KTU Activity Points."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/n2DHt997nz67x5a_K2f9z"
+  },
+
+  {
+  "id": 22,
+  "type": "workshop",
+  "slug": "cloud-computing-and-agentic-ai",
+  "title": "Cloud Computing and Agentic AI",
+  "category": "WORKSHOP",
+  "area": "Cloud Computing & AI",
+  "image": "/techevents/cloud.jpeg",
+  "guidelinesTitle": "LEARNING CIRCLE DETAILS",
+  "alt": "Cloud Computing and Agentic AI Learning Circle",
+  "description": "Explore the world of Cloud Computing and Agentic AI, learn from experts, and discover what’s next in technology at this Learning Circle presented by Drishti ’26 × μLearn.",
+  "details": [
+    "Date : 20 September 2026.",
+    "Format : Offline.",
+    "Reward : $5 Google Cloud credit per participant.",
+    "Program POC : Shirin - +91 91881 30830.",
+    "Event POC : Nitheesh - +91 97783 58686."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/ZCngw8JgDzgnGcKLAbyqH"
+  },
+
+  {
+  "id": 23,
+  "type": "workshop",
+  "slug": "sensor-fusion-101",
+  "title": "Sensor Fusion 101",
+  "category": "WORKSHOP",
+  "area": "Robotics & Embedded Systems",
+  "image": "/techevents/sensor.jpeg ",
+  "guidelinesTitle": "SENSOR FUSION 101 WORKSHOP DETAILS",
+  "alt": "Sensor Fusion 101 workshop",
+  "description": "Explore how drones, robots, and autonomous systems understand motion and their surroundings through sensors and sensor fusion. Learn about IMUs, accelerometers, gyroscopes, and basic sensor fusion algorithms through a 6-hour hands-on workshop with real hardware, presented by Drishti’26 × Velocet.",
+  "details": [
+    "Date : 18 September 2026.",
+    "Format : Offline.",
+    "Duration : 6 hours.",
+    "Registration Fee : ₹349 /-.",
+    "KTU Activity Points : 10.",
+    "Hands-on With : ESP32/Arduino Nano & MPU6050 IMU.",
+    "Requirement : Laptop with Arduino IDE installed.",
+    "Outcome : Understand and implement the fundamentals of sensor fusion.",
+    "Enquiries : Govind G - +91 70255 60765 · Karthik M Raj - +91 85479 2016."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/_9exVgyWSxSt1RQEGLKsa"
+  },
+
+  {
+  "id": 24,
+  "type": "workshop",
+  "slug": "dance-workshop",
+  "title": "Dance Workshop",
+  "category": "WORKSHOP",
+  "area": "Dance",
+  "image": "/techevents/dance.png",
+  "guidelinesTitle": "DANCE WORKSHOP DETAILS",
+  "alt": "Dance Workshop poster",
+  "description": "Step into an energetic dance session where rhythm meets expression and every move comes alive. Join instructor Nadeem for an engaging dance workshop presented by Drishti ’26 × CET Dance Club.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Format : Offline.",
+    "Instructor : Nadeem.",
+    "Registration Fee : ₹250/- for CETians, ₹300/- for Non-CETians.",
+    "Enquiries : Vishal - +91 83010 31242 · Anupam - +91 79072 00513."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/txXC1H_rX5KXPgOXYWx3N"
+}
 
   ]
 }
