@@ -58,7 +58,7 @@ function Daksha() {
 
  return (
  <>
- <div className="theme-blue relative w-full min-h-svh md:h-svh md:max-h-svh overflow-y-auto md:overflow-hidden flex flex-col justify-start md:justify-center text-sky-400 select-none md:touch-none">
+ <div className="theme-blue relative w-full min-h-svh flex flex-col justify-start md:justify-center text-sky-400 select-none md:touch-none">
  <Backdrop theme="blue" />
 
  <Navbar activeSection="daksha" theme="blue" />

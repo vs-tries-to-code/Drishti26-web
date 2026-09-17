@@ -74,6 +74,85 @@
         "Prize Pool : ₹30,000."
       ],
       "registerUrl": "https://discover.snaptiqz.com/event/jjkdtKQTF4U4J_cINNz5U"
-    }
+    },
+
+    {
+    "id": 5,
+    "slug": "optix",
+    "title": "OPTIX",
+    "category": "DAKSHA",
+    "area": "Process Optimization",
+    "guidelinesTitle": "OPTIX GUIDELINES",
+    "image": "/daksha/optix.jpeg",
+    "alt": "OPTIX Process Optimization Competition event",
+    "description": "OPTIX | Daksha '26 — Identify bottlenecks, uncover inefficiencies, and design smarter, data-driven solutions. Analyse processes, optimise performance, and put your problem-solving skills to the test in collaboration with IE Association × DATUM CET.",
+    "details": [
+      "Date : 19 September 2026.",
+      "Team Size : 2–4 members.",
+      "Eligibility : UG & PG, all disciplines.",
+      "Registration Fee : ₹49 per head.",
+      "Prize Pool : ₹3,000."
+    ],
+    "registerUrl": "https://discover.snaptiqz.com/event/PCXuDNseVF_4pT6qmeC50"
+  },
+
+  {
+  "id": 6,
+  "slug": "stock-market-masterclass",
+  "title": "Stock Market Masterclass",
+  "category": "DAKSHA",
+  "area": "Finance & Investment",
+  "guidelinesTitle": "STOCK MARKET MASTERCLASS GUIDELINES",
+  "image": "/daksha/stock.jpeg",
+  "alt": "Stock Market Masterclass event",
+  "description": "Stock Market Masterclass | Daksha '26 — Decode the stock market and build a stronger understanding of investing, market dynamics, trading strategies, and market trends. Learn, analyse, and explore practical approaches to navigating the markets with greater confidence.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Venue : College of Engineering Trivandrum.",
+    "Registration Fee : ₹19",
+    "Topics : Fundamentals of investing, market dynamics, trading strategies, and market trends."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/M4O7x9o00Si5B7PDwD30"
+},
+
+  {
+  "id": 7,
+  "slug": "trade-x",
+  "title": "Trade X : Unlock the Markets",
+  "category": "DAKSHA",
+  "area": "Finance & Trading",
+  "guidelinesTitle": "TRADE X : UNLOCK THE MARKETS GUIDELINES",
+  "image": "/daksha/tradex.jpeg",
+  "alt": "Trade X: Unlock the Markets event",
+  "description": "Trade X : Unlock the Markets | Daksha '26 — Decode the markets, understand price movements, and explore practical trading strategies. Learn about market fundamentals, trading strategies, option trading advantages, forex strategies, and gain hands-on market knowledge.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Venue : College of Engineering Trivandrum.",
+    "Registration Fee : ₹49",
+    "Topics : Market Fundamentals, Trading Strategies, Option Trading Advantages, Forex Trading Strategy, and Hands-on Learning."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/MmuUrVCxTy9KF1_xjbclS"
+},
+
+  {
+  "id": 8,
+  "slug": "the-freshers-formula",
+  "title": "The Freshers’ Formula",
+  "category": "DAKSHA",
+  "area": "Personal Development",
+  "guidelinesTitle": "THE FRESHERS’ FORMULA GUIDELINES",
+  "image": "/daksha/fresher.jpeg",
+  "alt": "The Freshers’ Formula event",
+  "description": "The Freshers’ Formula | Daksha '26 — Start smart and make your first year count. Navigate college life, discover opportunities, build skills and confidence, and connect with others as you begin your college journey.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Venue : College of Engineering Trivandrum.",
+    "Registration Fee : ₹19",
+    "Topics : College Life, Opportunities, Skill Building, Confidence, and Networking."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/UGyUonObq-TLgcY2NCtC2"
+}
+
+
   ]
 }
