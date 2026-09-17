@@ -500,7 +500,147 @@
     "Enquiries : Vishal - +91 83010 31242 · Anupam - +91 79072 00513."
   ],
   "registerUrl": "https://discover.snaptiqz.com/event/txXC1H_rX5KXPgOXYWx3N"
-}
+  },
+
+  {
+  "id": 25,
+  "type": "workshop",
+  "slug": "blender-workshop",
+  "title": "Blender Workshop",
+  "category": "WORKSHOP",
+  "area": "3D Modelling & Design",
+  "image": "/techevents/blender.jpeg",
+  "guidelinesTitle": "BLENDER WORKSHOP DETAILS",
+  "alt": "Blender Workshop poster",
+  "description": "Bring your ideas to life in 3D. Dive into Blender and explore the world of 3D modelling, design, and creativity with Drishti ’26.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Format : Offline.",
+    "Registration Fee : ₹49 /-.",
+    "Enquiries : Leon - +91 97470 16849 · Wazin - +91 96331 84450."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/C5uXs5i80qdXi3LsKeEUM"
+},
+
+  {
+  "id": 26,
+  "type": "workshop",
+  "slug": "davinci-workshop",
+  "title": "DaVinci Workshop",
+  "category": "WORKSHOP",
+  "area": "Video Editing & Visual Storytelling",
+  "image": "/techevents/davinci.jpeg",
+  "guidelinesTitle": "DAVINCI WORKSHOP DETAILS",
+  "alt": "DaVinci Workshop poster",
+  "description": "Turn your footage into stories that stand out. Learn the essentials of video editing, colour grading, and visual storytelling using DaVinci Resolve with Drishti ’26.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Format : Offline.",
+    "Registration Fee : ₹49 /-.",
+    "Enquiries : Leon - +91 97470 16849 · Wazin - +91 96331 84450."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/JGMQeqI7RkxlttjgfFb1E"
+  },
+
+  {
+  "id": 27,
+  "type": "workshop",
+  "slug": "bulb-making-workshop",
+  "title": "Bulb Making Workshop",
+  "category": "WORKSHOP",
+  "area": "Electrical & Electronics",
+  "image": "/techevents/bulb.jpeg",
+  "guidelinesTitle": "BULB MAKING WORKSHOP DETAILS",
+  "alt": "Bulb Making Workshop poster",
+  "description": "Everything looks different when you make it yourself. Get hands-on and discover what actually goes into making a bulb by learning the process and creating one yourself with Drishti ’26 × NSS.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Format : Offline.",
+    "Registration Fee : ₹89 /-.",
+    "Enquiries : Kashinadh - +91 73566 89767 · Nandakishore - +91 85909 76028."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/BJbrey0SjqqZXj1ZuTMo5"
+  },
+
+  {
+  "id": 28,
+  "type": "workshop",
+  "slug": "live-rag-powered-assistant",
+  "title": "Live RAG-Powered Assistant",
+  "category": "WORKSHOP",
+  "area": "AI",
+  "image": "/techevents/rag.jpeg",
+  "guidelinesTitle": "LIVE RAG-POWERED ASSISTANT DETAILS",
+  "alt": "Live RAG-Powered Assistant workshop poster",
+  "description": "What if your AI could search, understand, and respond with real-time information? Step into the world of Retrieval-Augmented Generation (RAG) and explore how AI-powered assistants turn information into intelligent answers with Drishti ’26 × NeuraCET.",
+  "details": [
+    "Date : 18, 19 & 20 September 2026.",
+    "Format : Offline.",
+    "Enquiries : Nakul - +91 62822 00176 · Joseph - +91 77361 33850.",
+    "Spot Registration"
+  ]
+},
+
+  {
+  "id": 29,
+  "type": "competition",
+  "slug": "ai-debate-arena",
+  "title": "AI Debate Arena",
+  "category": "COMPETITIONS",
+  "area": "AI",
+  "image": "/techevents/arena.jpeg",
+  "guidelinesTitle": "AI DEBATE ARENA DETAILS",
+  "alt": "AI Debate Arena competition poster",
+  "description": "Step into the arena where ideas clash, perspectives collide, and Artificial Intelligence becomes the topic of debate. Bring your arguments, defend your stance, and challenge the other side at AI Debate Arena by Drishti ’26 × NeuraCET.",
+  "details": [
+    "Date : 18, 19 & 20 September 2026.",
+    "Format : Offline.",
+    "Enquiries : Madhav - +91 82818 10202 · Kailas - +91 95672 93317.",
+    "Spot Registration"
+  ]
+},
+
+
+{
+  "id": 30,
+  "type": "workshop",
+  "slug": "crochet-workshop",
+  "title": "Crochet Workshop",
+  "category": "WORKSHOP",
+  "area": "Arts & Crafts",
+  "image": "/techevents/crochet.jpeg",
+  "guidelinesTitle": "CROCHET WORKSHOP DETAILS",
+  "alt": "Crochet Workshop poster",
+  "description": "Ready to get your hands a little busier? Pick up the basics of crochet and turn a simple thread into something of your own. Come curious, learn the craft, and make something you’ll actually want to keep with Drishti ’26 × NSS.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Format : Offline.",
+    "Registration Fee : ₹89 /-.",
+    "Enquiries : Kashinadh - +91 73566 89767 · Nandakishore - +91 85909 76028."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/kZO2ReahA9SwG2CF-SAHi"
+  },
+
+  {
+  "id": 31,
+  "type": "workshop",
+  "slug": "voicebot-build-program-command",
+  "title": "VOICEBOT - Build. Program. Command.",
+  "category": "WORKSHOP",
+  "area": "Robotics & AI",
+  "image": "/techevents/voice.jpeg",
+  "guidelinesTitle": "VOICEBOT WORKSHOP DETAILS",
+  "alt": "VOICEBOT voice-controlled mobile bot workshop poster",
+  "description": "Ever imagined controlling a robot just by speaking? Step into the world of robotics and bring your own voice-controlled mobile bot to life with Drishti ’26 × Build Club CET.",
+  "details": [
+    "Date : 19 September 2026.",
+    "Format : Offline.",
+    "Registration Fee : ₹199 /-.",
+    "KTU Activity Points : Available.",
+    "Enquiries : Darren - +91 99956 41317 · Abhinav - +91 94001 15957."
+  ],
+  "registerUrl": "https://discover.snaptiqz.com/event/pMV7LCBT4KpPrY7gDPfUk"
+  }
 
   ]
 }
