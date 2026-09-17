@@ -27,6 +27,7 @@ const dakshaTeamMembers = [
  { id: 1, name: 'Afnan', role: 'Co-Convenor', image: '/team/DAKSHA%20CORE/afn.png' },
  { id: 4, name: 'Keerthana', role: 'Co-Convenor', image: '/team/DAKSHA%20CORE/kt.png' },
  { id: 2, name: 'Aslam', role: 'Coordinator', image: '/team/DAKSHA%20CORE/aslm.png' },
+ { id: 9, name: 'Abhinav', role: 'Coordinator', image: '/team/DAKSHA%20CORE/abhi.png' },
  { id: 3, name: 'Avneesh', role: 'Coordinator', image: '/team/DAKSHA%20CORE/avnsh.png' },
  { id: 6, name: 'Sahla', role: 'Co-Convenor', image: '/team/DAKSHA%20CORE/sahla.png' },
  { id: 8, name: 'Yashok', role: 'Co-Convenor', image: '/team/DAKSHA%20CORE/ysh.png' },
