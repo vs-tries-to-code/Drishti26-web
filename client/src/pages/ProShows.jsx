@@ -14,6 +14,24 @@ import ProShowMobile from '/proshow/proshow.webp'
 
 const artistName = 'Shaan Rahman'
 
+// ---------------------------------------------------------------------------
+// Dhvani poster: where each cutout sits inside the poster frame.
+// Every number is a % of the FRAME (not the screen), and the frame keeps a
+// fixed 3240:1350 shape, so the layout stays identical on every screen size.
+//   left   = where the cutout's horizontal CENTRE is (0% = frame's left edge)
+//   width  = how wide the cutout is
+//   bottom = a NEGATIVE number pushes the cutout DOWN past the frame's bottom
+//            edge. The frame has overflow-hidden, so that overhang is cut off
+//            and the hard bottom edge of the PNG is never visible.
+// If a lady looks a little off, nudge these numbers (e.g. bottom -22.5% ->
+// -24% moves her lower, left 38.3% -> 37% moves her left).
+// ---------------------------------------------------------------------------
+const POSTER_LAYERS = {
+ dhvani3: { left: '58%', width: '35%', bottom: '-22.5%' }, // left lady
+ dhvani2: { left: '78%', width: '26.6%', bottom: '-15%' }, // right lady
+ dhvani1: { left: '50%', width: '43.5%', bottom: '-30%' }, // centre lady
+}
+
 const faqs = [
  {
   q: 'How do I obtain entry passes for the ProShow?',
@@ -42,6 +60,11 @@ function ProShowsPage({ embedded = false }) {
  const shadowRef = useRef(null)
  const glowRef = useRef(null)
  const particlesRef = useRef([])
+ const artistRevealRef = useRef(null)
+ const revealBaseRef = useRef(null)
+ const revealLayer1Ref = useRef(null)
+ const revealLayer2Ref = useRef(null)
+ const revealLayer3Ref = useRef(null)
  const faqSectionRef = useRef(null)
 
  useEffect(() => {
@@ -184,6 +207,118 @@ function ProShowsPage({ embedded = false }) {
    ScrollTrigger.refresh()
   }, pinWrapperRef)
 
+  // Layered artist reveal: hidden until the user scrolls this section into
+  // view, then a quick one-shot cascade (dhvani1 leads, dhvani2 + dhvani3
+  // follow right on its heels) plays in real time — not scroll-scrubbed, so
+  // it doesn't demand any extra scrolling once triggered. A light depth
+  // parallax continues while the section is in view. The background sits
+  // static behind all three, visible from the moment the section is reached.
+  const revealCtx = gsap.context(() => {
+   if (
+    !artistRevealRef.current ||
+    !revealLayer1Ref.current ||
+    !revealLayer2Ref.current ||
+    !revealLayer3Ref.current
+   ) {
+    return
+   }
+
+   // xPercent: -50 is the centering offset (matches each layer's `left: X%`
+   // being the horizontal CENTER, not the left edge). It has to be restated
+   // in every gsap call below — GSAP owns the whole `transform` property on
+   // an element it animates, so any tween that omits xPercent here would
+   // reset the layer back to being left-aligned instead of centered.
+   gsap.set(revealLayer1Ref.current, {
+    autoAlpha: 0,
+    xPercent: -50,
+    y: 36,
+    scale: 1.04,
+    transformOrigin: 'bottom center',
+   })
+   gsap.set(revealLayer2Ref.current, {
+    autoAlpha: 0,
+    xPercent: -50,
+    y: 28,
+    scale: 1.04,
+    transformOrigin: 'bottom center',
+   })
+   gsap.set(revealLayer3Ref.current, {
+    autoAlpha: 0,
+    xPercent: -50,
+    y: 28,
+    scale: 1.04,
+    transformOrigin: 'bottom center',
+   })
+
+   // This section is scrolled to (not part of the initial hero view): only
+   // the background should be visible until the user scrolls it into range,
+   // at which point the three layers cascade in on their own, in real time,
+   // without needing any further scrolling. toggleActions: 'play none none
+   // reverse' fires the timeline once on entry (and reverses it if the user
+   // scrolls back up past the start line) — it does NOT scrub with scroll
+   // distance, so the whole cascade plays out over ~0.8s regardless of how
+   // fast or slow the user scrolls.
+   const revealTl = gsap.timeline({
+    scrollTrigger: {
+     trigger: artistRevealRef.current,
+     start: 'top 98%',
+     toggleActions: 'play none none reverse',
+    },
+   })
+
+   revealTl
+    .to(revealLayer1Ref.current, { autoAlpha: 1, y: 0, scale: 1, duration: 1.5, ease: 'power2.out' })
+    .to(revealLayer2Ref.current, { autoAlpha: 1, y: 0, scale: 1, duration: 0.4, ease: 'power2.out' }, '-=0.28')
+    .to(revealLayer3Ref.current, { autoAlpha: 1, y: 0, scale: 1, duration: 0.4, ease: 'power2.out' }, '-=0.3')
+
+   // Depth parallax while scrolling through the section.
+   // The drift is small and goes equally UP and DOWN around the resting
+   // position (from +N to -N), so:
+   //  - when the poster is in the middle of the screen the ladies sit exactly
+   //    where POSTER_LAYERS puts them (matching the Figma reference), and
+   //  - they never lift far enough to show the bottom edge of their PNG.
+   // xPercent: -50 is repeated for the same reason as above.
+   gsap.fromTo(
+    revealLayer1Ref.current,
+    { xPercent: -50, yPercent: 2 },
+    {
+     xPercent: -50,
+     yPercent: -2,
+     ease: 'none',
+     scrollTrigger: {
+      trigger: artistRevealRef.current,
+      start: 'top bottom',
+      end: 'bottom top',
+      scrub: true,
+     },
+    }
+   )
+
+   gsap.fromTo(
+    [revealLayer2Ref.current, revealLayer3Ref.current],
+    { xPercent: -50, yPercent: 1.5 },
+    {
+     xPercent: -50,
+     yPercent: -1.5,
+     ease: 'none',
+     scrollTrigger: {
+      trigger: artistRevealRef.current,
+      start: 'top bottom',
+      end: 'bottom top',
+      scrub: true,
+     },
+    }
+   )
+
+   // Layout can shift slightly once the (large) background photo finishes
+   // loading, which can throw off the trigger math computed beforehand —
+   // refresh once it's actually in.
+   const bgImg = revealBaseRef.current?.querySelector('img')
+   if (bgImg && !bgImg.complete) {
+    bgImg.addEventListener('load', () => ScrollTrigger.refresh(), { once: true })
+   }
+  }, artistRevealRef)
+
   const refreshRaf = requestAnimationFrame(() => {
    ScrollTrigger.sort()
    ScrollTrigger.refresh()
@@ -191,6 +326,7 @@ function ProShowsPage({ embedded = false }) {
 
   return () => {
    cancelAnimationFrame(refreshRaf)
+   revealCtx.revert()
    ctx.revert()
   }
  }, [])
@@ -305,6 +441,75 @@ function ProShowsPage({ embedded = false }) {
     </div>
     */}
    </div>
+
+   <section ref={artistRevealRef} className="relative w-full bg-black px-3 py-10 sm:px-6 sm:py-14 lg:py-20">
+    {/*
+     Poster frame: locked to the real Figma canvas ratio (3240x1350) so the
+     background photo, the baked-in DHVANI wordmark/PERFORMING LIVE text/logos,
+     and the three artist cutouts always scale together as one composition —
+     on any screen width — instead of being cropped by a mismatched container.
+    */}
+    <div
+     className="relative mx-auto w-full max-w-[1600px] overflow-hidden rounded-lg sm:rounded-2xl"
+     style={{ aspectRatio: '3240 / 1350' }}
+    >
+     {/* Background: crowd photo with DHVANI wordmark, PERFORMING LIVE and logos already baked in */}
+     <div ref={revealBaseRef} className="absolute inset-0 z-0">
+      <img
+       src="/proshow/Screenshot%202026-09-21%20150303.png"
+       alt="Dhvani performing live — Drishti '26"
+       className="h-full w-full object-cover"
+      />
+     </div>
+
+     {/*
+      Note: these three layers are centered via GSAP's xPercent (set in the
+      reveal effect below), NOT a CSS translateX. gsap.set/.to fully replace
+      the `transform` property, so any translateX baked in here as inline
+      style or a Tailwind class would get silently wiped the instant GSAP
+      touches y/scale/yPercent on the same element — which is what was
+      pushing dhvani2 off-canvas and burying dhvani3 under dhvani1.
+     */}
+
+     {/* Back layer: dhvani3 (viewer's left) + dhvani2 (viewer's right), same depth.
+         Positions come from POSTER_LAYERS at the top of this file. */}
+     <div
+      ref={revealLayer3Ref}
+      className="absolute z-10"
+      style={POSTER_LAYERS.dhvani3}
+     >
+      <img
+       src="/proshow/dhvani3.png"
+       alt=""
+       className="h-auto w-full object-contain drop-shadow-[0_0_40px_rgba(212,175,55,0.15)]"
+      />
+     </div>
+     <div
+      ref={revealLayer2Ref}
+      className="absolute z-10"
+      style={POSTER_LAYERS.dhvani2}
+     >
+      <img
+       src="/proshow/dhvani2.png"
+       alt=""
+       className="h-auto w-full object-contain drop-shadow-[0_0_40px_rgba(212,175,55,0.16)]"
+      />
+     </div>
+
+     {/* Front layer: dhvani1, centered, in front of everything else */}
+     <div
+      ref={revealLayer1Ref}
+      className="absolute z-50"
+      style={POSTER_LAYERS.dhvani1}
+     >
+      <img
+       src="/proshow/dhvani1.png"
+       alt="Dhvani"
+       className="h-auto w-full object-contain drop-shadow-[0_0_48px_rgba(212,175,55,0.18)]"
+      />
+     </div>
+    </div>
+   </section>
 
    {/* FAQ Section */}
     <section ref={faqSectionRef} className="mx-auto max-w-[900px] lg:max-w-[1200px] px-[clamp(16px,4vw,40px)] py-20 opacity-0">
